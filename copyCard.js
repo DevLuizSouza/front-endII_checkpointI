@@ -25,7 +25,8 @@ buttonCopy.addEventListener("click", function (e) {
         cardCategory.setAttribute("class", "card-category");
 
         // add style to the card-category div
-        cardCategory.setAttribute("style", "background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()");
+        cardCategory.setAttribute("style", `"background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(${copyField3})`);
+
         // add the text of the card
         cardCategory.appendChild(document.createTextNode(copyField1));
         cardCategory.appendChild(document.createTextNode(copyField2));
